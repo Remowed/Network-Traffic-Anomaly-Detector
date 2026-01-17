@@ -1,14 +1,13 @@
 import numpy as np
 import os
 
-# sanity check
 print("Current working directory:", os.getcwd())
 print("Files in folder:", os.listdir())
 
 data = np.genfromtxt(
     "traffic.csv",
     delimiter=",",
-    names=True,  # use header
+    names=True,
     dtype=None,
     encoding="utf-8"
 )
